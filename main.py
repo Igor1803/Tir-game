@@ -1,10 +1,11 @@
 import pygame
+import random
 
 pygame.init()
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT)
+screen = pygame.display.set_mode(SCREEN_WIDTH, SCREEN_HEIGHT)
 
 pygame.display.set_caption("Игра Тир")
 icon = pygame.image.load("img/icon.jpg")
@@ -20,6 +21,6 @@ color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
 running = True
 while running:
-        pass
-# new code
+        screen.fill(color)
+
 pygame.quit()
